@@ -68,7 +68,7 @@ tl.add('.slide:nth-child(1) p.center', {
   duration: 1150,
   innerHTML: scrambleText({
     override: false,
-    text: 'Scramble text animations made easy.',
+    text: 'What a cool Animation.',
     from: 'right',
     duration: 950,
     settleDuration: 500,
@@ -77,7 +77,7 @@ tl.add('.slide:nth-child(1) p.center', {
 }, '<+=250');
 tl.add('.slide:nth-child(1) p.center', {
   innerHTML: scrambleText({
-    text: '',
+    text: 'Mynk',
     override: false,
     from: 'random',
     reversed: true,
