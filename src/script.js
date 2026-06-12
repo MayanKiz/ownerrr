@@ -53,7 +53,7 @@ tl.add('.slide:nth-child(1) p.center', {
   ease: 'inOutExpo',
   duration: 1500,
   innerHTML: scrambleText({
-    text: 'Anime.js Scramble Text',
+    text: 'Hehe Kuch toh acchaa haii',
     ease: 'inQuad',
     override: false,
     from: 'center',
