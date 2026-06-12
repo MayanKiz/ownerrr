@@ -131,7 +131,7 @@ tl.add('.slide:nth-child(3) p', {
   ease: 'inOutExpo',
   duration: 1250,
   innerHTML: scrambleText({
-    text: 'Anime.js v4.4.0',
+    text: 'Text scramble Animation',
     override: false,
     from: 'right',
     cursor: '░▒▓',
