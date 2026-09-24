@@ -1,21 +1,50 @@
-<main>
-  <div class="slide">
-    <div class="row"><p>Introducing</p><p>Introducing</p></div>
-    <div class="row"><p>Introducing</p><p>Introducing</p><p>Introducing</p></div>
-    <div class="row"><p>Introducing</p><p>Introducing</p><p>Introducing</p><p>Introducing</p></div>
-    <div class="row"><p>Introducing</p><p>Introducing</p><p class="center">Introducing</p><p>Introducing</p><p>Introducing</p></div>
-    <div class="row"><p>Introducing</p><p>Introducing</p><p>Introducing</p><p>Introducing</p></div>
-    <div class="row"><p>Introducing</p><p>Introducing</p><p>Introducing</p></div>
-    <div class="row"><p>Introducing</p><p>Introducing</p></div>
-  </div>
-  <div class="slide features">
-    <div class="row"><p data-color="3">Custom Easing</p><p data-color="8">Keyframe Chaining</p></div>
-    <div class="row"><p data-color="14">Custom Characters</p><p data-color="0">Perturbation</p><p data-color="6">Settle Duration</p></div>
-    <div class="row"><p data-color="3">Char Interval</p><p data-color="16">Text Cursor</p><p data-color="4">Seeded Random</p><p data-color="1">Text Override</p></div>
-    <div class="row"><p data-color="11">Refresh Rate</p><p data-color="5">Reveal Direction</p><p data-color="10">Built-in charsets</p></div>
-    <div class="row"><p data-color="13">Speed Control</p><p data-color="2">Reveal Delay</p></div>
-  </div>
-  <div class="slide">
-    <p>Welcome To Rao.Mynkk Core</p>
-  </div>
-</main>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ownerrr — a small digital playground by Mayank Yadav." />
+    <title>ownerrr — digital playground</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <main class="shell">
+      <header class="topbar">
+        <a class="brand" href="./" aria-label="ownerrr home"><span class="brand-mark">/</span>ownerrr</a>
+        <div class="topbar-meta"><span class="pulse"></span><span>online / experimenting</span></div>
+      </header>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span>001</span> personal digital playground</p>
+          <h1 id="hero-title">Ideas in.<br /><em>Interesting</em> things out.</h1>
+          <p class="intro">A living space for playful interfaces, sharp experiments, and small moments of digital magic.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://github.com/MayanKiz" target="_blank" rel="noreferrer">Explore the work <span>↗</span></a>
+            <a class="button button-ghost" href="mailto:rao.mynkk@gmail.com">Say hello <span>→</span></a>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Animated ownerrr mark" role="img">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbital-label label-top">build / break / repeat</div>
+          <div class="orbital-label label-bottom">made by mayank</div>
+          <div class="core"><span class="core-slash">/</span><span id="scramble-word">create</span></div>
+        </div>
+      </section>
+
+      <section class="signal-grid" aria-label="What happens here">
+        <article class="signal-card signal-featured"><span class="card-number">01</span><div><p class="card-label">the energy</p><h2>Curiosity, with a cursor.</h2><p>New ideas become interfaces, interactions, and experiments worth opening twice.</p></div></article>
+        <article class="signal-card"><span class="card-number">02</span><div><p class="card-label">the method</p><h2>Make it feel alive.</h2><p>Motion, detail, and a little chaos—used with intention.</p></div></article>
+        <article class="signal-card"><span class="card-number">03</span><div><p class="card-label">the toolkit</p><h2>Code + craft.</h2><p>Web technology, visual design, and a constant urge to try something new.</p></div></article>
+      </section>
+
+      <footer class="footer"><span>© 2025 / ownerrr</span><span class="footer-rule"></span><span>stay curious<span class="footer-dot">.</span></span></footer>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

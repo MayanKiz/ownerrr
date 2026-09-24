@@ -1,52 +1,47 @@
-# Owner Dashboard Prototype
+# ownerrr
 
-## Description
+> **Ideas in. Interesting things out.**
 
-A small project workspace reserved for owner-focused dashboard experiments and future application modules.
+`ownerrr` is Mayank Yadav's small digital playground: a visual landing page for experiments, interfaces, motion, and whatever is worth building next. It is intentionally lightweight, opinionated, and a little playful.
 
-## Quick Start
+## What you will find here
 
-Review the available source files and run the project-specific command listed in its package metadata, if present.
+- A bold editorial-style landing page with responsive layout.
+- A subtle animated wordmark that cycles through the project's creative loop: **create → explore → iterate → imagine**.
+- A warm paper palette, acid green energy, orange accents, and a grain layer for texture.
+- Accessible links, semantic sections, mobile support, and reduced-motion consideration.
+- Zero build step: plain HTML, CSS, and JavaScript that can be opened or deployed as-is.
 
-## Tech Stack
+## Run it locally
 
-Project-specific tooling
-
-## Key Features
-
-- Project scaffold.
-- space for dashboard components.
-- extensible application structure.
-
-## Project Structure
-
-The primary entry point is the repository source files. Supporting components, services, styles, and configuration files remain organized next to the relevant application layer.
-
-## Setup and Installation
-
-### Prerequisites
-
-Install the runtime required by the project. JavaScript projects require Node.js and npm. Python projects require Python 3. External integrations such as Supabase, Firebase, AI providers, Telegram, or browser camera access must be configured through environment variables or explicit local permissions.
-
-### Run Locally
-
-```text
-Review the project files and add the runtime command when implementation is added.
+```bash
+git clone https://github.com/MayanKiz/ownerrr.git
+cd ownerrr
+python3 -m http.server 3000 --directory dist
 ```
 
-## Deployment
+Then open [http://localhost:3000](http://localhost:3000). The deployed files live in `dist/`; the editable source lives in `src/`.
 
-For a static project, publish the project directory through a static hosting provider. For a Next.js or Vite project, connect the repository to the hosting provider and use the package script defined in `package.json`. Configure all required secrets in the hosting provider dashboard; do not commit credentials to source control.
+## Project map
 
-## Notes
+| Path | Purpose |
+| --- | --- |
+| `src/index.html` | Semantic page structure and content |
+| `src/style.css` | Visual system, responsive layout, and motion-safe styling |
+| `src/script.js` | Small client-side scramble animation |
+| `dist/` | Static files served by Vercel |
+| `vercel.json` | Static deployment configuration |
 
-This repository is intended for learning, prototyping, and controlled demonstration. Review permissions, user consent, and third-party service terms before enabling camera, messaging, database, or automation features in a public deployment.
+## Design direction
+
+The page treats a personal website like a poster: strong type, high contrast, generous whitespace, and details that reward a closer look. The copy is deliberately short so the visual language can do the talking.
 
 ## Contact
 
-For questions, collaboration, or technical discussion, use the following professional channels:
+- Instagram: [@rao.mynkk](https://www.instagram.com/Rao.mynkk/)
+- Email: [rao.mynkk@gmail.com](mailto:rao.mynkk@gmail.com)
+- LinkedIn: [Mayank Yadav](https://www.linkedin.com/in/mayank-yadav-2803202a5/)
 
-- Instagram: [@rao.mynkk](https://www.instagram.com/rao.mynkk/).
-- Email: [rao.mynkk@gmail.com](mailto:rao.mynkk@gmail.com).
-- WhatsApp: [+24 106 603 434](https://wa.me/24106603434).
-- LinkedIn: [Mayank Yadav](https://www.linkedin.com/in/mayank-yadav-2803202a5/).
+---
+
+Made with curiosity by **Mayank Yadav**.
