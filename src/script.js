@@ -26,3 +26,17 @@ setInterval(() => {
   wordIndex = (wordIndex + 1) % words.length;
   scrambleTo(words[wordIndex]);
 }, 2200);
+
+
+const panelButtons = document.querySelectorAll('.loop-button');
+const panels = document.querySelectorAll('.loop-panel');
+let panelIndex = 0;
+
+function showPanel(index) {
+  panelIndex = index;
+  panelButtons.forEach((button) => button.classList.toggle('is-active', Number(button.dataset.panel) === index));
+  panels.forEach((panel) => panel.classList.toggle('is-active', Number(panel.dataset.panelContent) === index));
+}
+
+panelButtons.forEach((button) => button.addEventListener('click', () => showPanel(Number(button.dataset.panel))));
+setInterval(() => showPanel((panelIndex + 1) % panels.length), 5200);

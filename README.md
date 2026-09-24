@@ -41,6 +41,7 @@ The page treats a personal website like a poster: strong type, high contrast, ge
 - Instagram: [@rao.mynkk](https://www.instagram.com/Rao.mynkk/)
 - Email: [rao.mynkk@gmail.com](mailto:rao.mynkk@gmail.com)
 - LinkedIn: [Mayank Yadav](https://www.linkedin.com/in/mayank-yadav-2803202a5/)
+- Website: [www.mynkk.me](https://www.mynkk.me)
 
 ---
 
