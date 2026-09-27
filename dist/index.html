@@ -1,41 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MayanKiz — gtff.">
-    <title>MayanKiz — gtff.</title>
-    <link rel="stylesheet" href="https://codepen.io/juliangarnier/pen/PwzmygE.css">
-    <link rel="stylesheet" href="./style.css">
-  </head>
+  <title>Mayank Yadav | Developer</title>
 
-  <body>
-    <main>
+  <meta
+    name="description"
+    content="Mayank Yadav, CSE student, AI & ML enthusiast, developer and cybersecurity enthusiast."
+  />
+
+  <style>
+    :root {
+      --black-1: #050505;
+      --white-1: #ffffff;
+
+      --red-1: #ff5555;
+      --red-5: #260606;
+
+      --orange-1: #ff8a00;
+      --orange-5: #2b1200;
+
+      --yellow-1: #ffe600;
+      --lime-1: #b7ff00;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      background: var(--black-1);
+      color: var(--white-1);
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+      transition: background 0.75s ease;
+    }
+
+    .wrapper {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .slides {
+      width: min(1100px, 100%);
+      height: min(650px, 90vh);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      opacity: 0;
+      pointer-events: none;
+      text-align: center;
+    }
+
+    .slide-content {
+      width: 100%;
+      padding: 30px;
+    }
+
+    .slide p {
+      margin: 18px 0;
+      line-height: 1.1;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+    }
+
+    .slide:nth-child(1) p.center {
+      font-size: clamp(3rem, 9vw, 8rem);
+    }
+
+    .slide:nth-child(1) p:not(.center) {
+      font-size: clamp(1rem, 2vw, 1.4rem);
+    }
+
+    .slide:nth-child(2) p {
+      font-size: clamp(2rem, 5vw, 5rem);
+    }
+
+    .slide:nth-child(3) p {
+      font-size: clamp(2rem, 5vw, 5rem);
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.85rem !important;
+      letter-spacing: 0.15em !important;
+      text-transform: uppercase;
+      opacity: 0.7;
+      font-weight: 500 !important;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 22px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+
+      opacity: 0.45;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    @media (max-width: 600px) {
+      .wrapper {
+        padding: 15px;
+      }
+
+      .slides {
+        height: 80vh;
+      }
+
+      .slide-content {
+        padding: 15px;
+      }
+
+      .footer {
+        bottom: 15px;
+        font-size: 9px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="wrapper">
+    <section class="slides">
+
+      <!-- SLIDE 1 -->
       <div class="slide">
-        <div class="row"><p>Introducing</p><p>Introducing</p></div>
-        <div class="row"><p>Introducing</p><p>Introducing</p><p>Introducing</p></div>
-        <div class="row"><p>Introducing</p><p>Introducing</p><p>Introducing</p><p>Introducing</p></div>
-        <div class="row"><p>Introducing</p><p>Introducing</p><p class="center">Introducing</p><p>Introducing</p><p>Introducing</p></div>
-        <div class="row"><p>Introducing</p><p>Introducing</p><p>Introducing</p><p>Introducing</p></div>
-        <div class="row"><p>Introducing</p><p>Introducing</p><p>Introducing</p></div>
-        <div class="row"><p>Introducing</p><p>Introducing</p></div>
+        <div class="slide-content">
+
+          <p class="tag">
+            Developer • AI • Cybersecurity
+          </p>
+
+          <p class="center">
+            Mayank Yadav
+          </p>
+
+          <p>
+            CSE • AI &amp; ML
+          </p>
+
+          <p>
+            Building things with code.
+          </p>
+
+        </div>
       </div>
 
-      <div class="slide features">
-        <div class="row"><p data-color="3">Custom Easing</p><p data-color="8">Keyframe Chaining</p></div>
-        <div class="row"><p data-color="14">Custom Characters</p><p data-color="0">Perturbation</p><p data-color="6">Settle Duration</p></div>
-        <div class="row"><p data-color="3">Char Interval</p><p data-color="16">Text Cursor</p><p data-color="4">Seeded Random</p><p data-color="1">Text Override</p></div>
-        <div class="row"><p data-color="11">Refresh Rate</p><p data-color="5">Reveal Direction</p><p data-color="10">Built-in charsets</p></div>
-        <div class="row"><p data-color="13">Speed Control</p><p data-color="2">Reveal Delay</p></div>
-      </div>
 
+      <!-- SLIDE 2 -->
       <div class="slide">
-        <p>gtff.</p>
+        <div class="slide-content">
+
+          <p>
+            Web Developer
+          </p>
+
+          <p>
+            AI &amp; ML Enthusiast
+          </p>
+
+          <p>
+            Cybersecurity Explorer
+          </p>
+
+        </div>
       </div>
-    </main>
 
-    <script type="module" src="./script.js"></script>
-  </body>
 
+      <!-- SLIDE 3 -->
+      <div class="slide">
+        <div class="slide-content">
+
+          <p>
+            Always Building
+          </p>
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <div class="footer">
+    Mayank Yadav • 2026
+  </div>
+
+  <script type="module" src="./script.js"></script>
+
+</body>
 </html>
